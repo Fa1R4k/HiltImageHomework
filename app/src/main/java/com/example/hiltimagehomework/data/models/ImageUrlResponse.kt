@@ -1,6 +1,6 @@
-package com.example.hilthomework.data.models
+package com.example.hiltimagehomework.data.models
 
 data class ImageUrlResponse(
-    val imageURL: String? = null,
+    val imageUrl: String? = null,
 )
 

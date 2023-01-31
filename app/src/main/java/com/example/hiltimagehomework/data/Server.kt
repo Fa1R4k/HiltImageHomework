@@ -1,6 +1,6 @@
 package com.example.hilthomework.data
 
-import com.example.hilthomework.data.models.ImageUrlResponse
+import com.example.hiltimagehomework.data.models.ImageUrlResponse
 import javax.inject.Inject
 
 class Server @Inject constructor() {

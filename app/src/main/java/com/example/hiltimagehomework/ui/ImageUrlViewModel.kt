@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.hiltimagehomework.domain.ImageUrlRepository
-import com.example.hilthomework.domain.ImageUrlUiData
+import com.example.hiltimagehomework.domain.ImageUrlUiData
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -17,7 +17,7 @@ class ImageUrlViewModel @Inject constructor(
     val liveData: LiveData<ImageUrlUiData> get() = _liveData
 
     fun getImageUrl() {
-        val greetings = repository.getImageURL()
-        _liveData.value = greetings
+        val imageUrl = repository.getImageUrl()
+        _liveData.value = imageUrl
     }
 }

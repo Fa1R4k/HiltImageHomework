@@ -1,5 +1,5 @@
-package com.example.hilthomework.domain
+package com.example.hiltimagehomework.domain
 
 data class ImageUrlUiData(
-    val imageURL: String,
+    val imageUrl: String,
 )

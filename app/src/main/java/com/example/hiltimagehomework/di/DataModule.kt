@@ -1,6 +1,6 @@
 package com.example.hiltimagehomework.di
 
-import com.example.hilthomework.data.ImageUrlRepositoryImpl
+import com.example.hiltimagehomework.data.ImageUrlRepositoryImpl
 import com.example.hiltimagehomework.domain.ImageUrlRepository
 import dagger.Binds
 import dagger.Module

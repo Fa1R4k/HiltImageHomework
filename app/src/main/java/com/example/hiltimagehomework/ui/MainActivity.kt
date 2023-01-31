@@ -10,18 +10,18 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-    private val vm by viewModels<ImageUrlViewModel>()
+    private val viewModel by viewModels<ImageUrlViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Glide.with(this)
 
-        vm.getImageUrl()
+        viewModel.getImageUrl()
 
-        vm.liveData.observe(this) {
+        viewModel.liveData.observe(this) {
             Glide.with(this)
-                .load(it.imageURL)
+                .load(it.imageUrl)
                 .into(findViewById(R.id.ivImage))
         }
     }
